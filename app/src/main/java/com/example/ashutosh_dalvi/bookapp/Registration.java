@@ -8,19 +8,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.firebase.database.DataSnapshot;
+/*import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.database.ValueEventListener;*/
 
 public class Registration extends AppCompatActivity {
 
-    private DatabaseReference fdatabase;
+    //private DatabaseReference fdatabase;
     private EditText name,mail_id,password,cpassword,contact;
     private Button button;
     private User user= new User();
-    FirebaseDatabase ref;
+    //FirebaseDatabase ref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,8 +41,8 @@ public class Registration extends AppCompatActivity {
             }
         });*/
 
-        ref = FirebaseDatabase.getInstance();
-        fdatabase = ref.getReference();
+        //ref = FirebaseDatabase.getInstance();
+        //fdatabase = ref.getReference();
 
     }
     public void getdata(){
@@ -51,15 +51,15 @@ public class Registration extends AppCompatActivity {
         user.setPassword(password.getText().toString());
         user.setContact(contact.getText().toString());
     }
-    public void signinconn(View view){
+    /*public void signinconn(View view){
         //fdatabase.addValueEventListener(new ValueEventListener() {
         //    @Override
          //   public void onDataChange(DataSnapshot dataSnapshot) {
                 getdata();
-                fdatabase.push().setValue(user);
+                //fdatabase.push().setValue(user);
                Toast.makeText(Registration.this, "Data Inserted...", Toast.LENGTH_SHORT).show();
 
-            }
+            }*/
 
            // @Override
           //  public void onCancelled(DatabaseError databaseError) {

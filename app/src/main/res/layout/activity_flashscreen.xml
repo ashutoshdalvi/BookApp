@@ -7,13 +7,17 @@
     tools:context=".FlashScreen"
     android:background="@drawable/flashbackground"
     >
-    <android.support.v7.widget.AppCompatImageView
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="135dp"
+        android:layout_height="131dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/logo"
-        />
+        android:layout_marginTop="187dp"
+
+        app:civ_border="false"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#FFE80404"
+        app:srcCompat="@drawable/logo01" />
 
 </RelativeLayout>
